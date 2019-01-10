@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace OpenWebsearch
 {
-    public partial class Form1 : Form
+    public partial class Browser : Form
     {
-        public Form1()
+        public Browser()
         {
+            string DSE = "www.duckduckgo.com" ;
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Homeb_Click(object sender, EventArgs e)
         {
-
+            geckoWebBrowser1.Navigate("www.duckduckgo.com");
         }
     }
 }
